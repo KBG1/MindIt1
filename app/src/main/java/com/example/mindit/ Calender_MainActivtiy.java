@@ -1,4 +1,4 @@
-package com.example.helloandroid;
+package com.example.mindit;
 
 import androidx.appcompat.app.AppCompatActivity;//ActionBar 만드는 라이브러리
 import androidx.annotation.NonNull;
@@ -17,7 +17,7 @@ import android.widget.TextView;//activity_main에 있는 TextView을 가져옴
 import java.io.FileInputStream;//입력 스트림
 import java.io.FileOutputStream;//출력 스트림
 
-public class MainActivity extends AppCompatActivity {
+class Calender_MainActivity extends AppCompatActivity {
 
     public String fname=null;
     public String str=null;
