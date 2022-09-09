@@ -36,13 +36,13 @@ class Calender_MainActivity extends AppCompatActivity {
         del_Btn=findViewById(R.id.del_Btn);
         cha_Btn=findViewById(R.id.cha_Btn);
         textView2=findViewById(R.id.textView2);
-        textView3=findViewById(R.id.textView3);
+        textView3=findViewById(R.id.textView3);//textView3는 제목
         contextEditText=findViewById(R.id.contextEditText);
         //로그인 및 회원가입 엑티비티에서 이름을 받아옴-> 나중에 합칠 때 깃허브로 가져오기
         Intent intent=getIntent();//intent에 데이터를 받음.
         String name=intent.getStringExtra("userName");//name(변수)에는 intent안의 userName
         final String userID=intent.getStringExtra("userID");//userID(변수)에는 intent안의 userID
-        textView3.setText(name+"님의 달력 일기장");
+        textView3.setText(name+"님의 달력 일기장");//name은 아이디랑 연동시킨 name을 넣음, setText는 textview3에 있는 내용을 바꿀때 사용함
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
