@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/82107/MindIt1/app/src/main/res/drawable/edittextround.xml" value="0.1" />
+        <entry key="..\:/Users/82107/MindIt1/app/src/main/res/layout/achievementresult.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/82107/MindIt1/app/src/main/res/layout/activity_main.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/82107/MindIt1/app/src/main/res/layout/calender_activity_main.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/82107/MindIt1/app/src/main/res/layout/todayachievement.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/82107/MindIt1/app/src/main/res/layout/writediary.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MindIt1/app/src/main/res/layout/calender_activity_main.xml" value="0.215625" />
       </map>
     </option>

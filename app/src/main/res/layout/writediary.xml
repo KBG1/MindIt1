@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="MINDIT 오늘 하루는 어떠셨나요?"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:background="#FFFFFF"
+        android:textColor="#6667AB"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/diaryDate"
+        android:gravity="right"
+        />
+
+    <EditText
+        android:id="@+id/edit_diary"
+        android:layout_margin="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="367dp"
+        android:layout_marginStart="10dp"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:background="@drawable/edittextround"
+        android:lines="10"
+        android:textColor="#CC723D"/>
+
+    <Button
+        android:id="@+id/btn_diary_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#6667AB"
+        android:text="저장"/>
+
+</LinearLayout>
