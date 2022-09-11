@@ -30,6 +30,7 @@
         android:layout_height="40dp"
         android:layout_gravity="right"
         android:text="일기 쓰기"
+        app:backgroundTint="#6667AB"
         app:layout_constraintTop_toBottomOf="@+id/save_Btn"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -39,6 +40,7 @@
         android:layout_height="40dp"
         android:layout_gravity="left"
         android:text="만족도"
+        app:backgroundTint="#6667AB"
         app:layout_constraintEnd_toStartOf="@+id/btnDiary"
         app:layout_constraintTop_toBottomOf="@+id/save_Btn" />
 
