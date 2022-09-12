@@ -19,13 +19,16 @@ import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    public String fname=null;
-    public String str=null;
+    public String fname = null;
+    public String str = null;
     public CalendarView calendarView;
-    public Button cha_Btn,del_Btn,save_Btn;//cha_Btn(수정), del_Btn(삭제), save_Btn(저장)
-    public TextView diaryTextView,textView2,textView3;
+    public Button cha_Btn, del_Btn, save_Btn;//cha_Btn(수정), del_Btn(삭제), save_Btn(저장)
+    public TextView diaryTextView, textView2, textView3;
     public EditText contextEditText;
     Button btnAcheive; // 오늘의 성취도
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,20 @@ public class MainActivity extends AppCompatActivity {
         String name=intent.getStringExtra("userName");//name(변수)에는 intent안의 userName
         final String userID=intent.getStringExtra("userID");//userID(변수)에는 intent안의 userID
         textView3.setText(name+"님의 달력 일기장");
+
+           //로그인 버튼 오류 고쳐야 함
+
+
+        //버튼 만드는 코드 추가
+        Button Login = findViewById(R.id.Login); //변수 선언 추가
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent().setClass(getApplicationContext(), com.example.mindit.signup_LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         // 일기에 들어가는 버튼 실행행

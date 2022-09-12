@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mindit">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,8 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mindit"
         tools:targetApi="31">
+
+
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +30,12 @@
         <activity android:name=".WriteDiaryActivity"/>
         <activity android:name=".achievement"/>
         <activity android:name=".ResultActivity"/>
+        <activity android:name=".signup_LoginActivity"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".signup_RegisterActivity"/>
 
     </application>
 
 </manifest>
+
+
